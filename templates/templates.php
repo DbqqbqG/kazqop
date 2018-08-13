@@ -13,9 +13,9 @@ $header2 = <<<KHEAD2
 </head>
 KHEAD2;
 
-
 define("KHEAD1",$header1);
 define("KHEAD2",$header2);
+
 $footer = <<<KFOOT    
     <script href="js.js" type="../text/javascript"></script>
  </body>
