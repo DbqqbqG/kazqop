@@ -1,5 +1,5 @@
 <?php
-require "../../templates.php";
+require "../../templates/templates.php";
 $title = "PHP7"
 echo KHEAD1;
 echo $title;
