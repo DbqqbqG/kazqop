@@ -1,4 +1,48 @@
 body {
-    margin: 0%;
-    padding: 0%;
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(circle, #466E95, #1E2026);
+}
+form {
+    background-color: #1E2026;
+    width: 33%;
+    margin-left: 33%;
+    margin-top: 14%;
+    opacity: 0.77;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 15px;
+    box-shadow: 1px 4px 10px #1E2026;
+}
+.form {
+    display: grid;
+    grid-row-gap: 1em;
+
+}
+form input.input {
+    width: 80%;
+    height: 2em;
+    margin-left: 10%;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    font-size: 1.3em;
+
+}
+form input.submit {
+    width: 10%;
+    height: 70%;
+    margin-left: 45%;
+    margin-bottom: 4em;
+    border-radius: 10em;
+    border: 1px solid rgba(0,0,0,0);
+    box-shadow: 0 0 30px #466E95;
+    font-weight: bold;
+
+}
+#inp {
+    margin-top: 4em;
+}
+form input.submit:hover {
+    background: radial-gradient(circle, white, #1E2026);
+    box-shadow: 0 30px 80px #466E95;
 }

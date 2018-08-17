@@ -1,51 +1,22 @@
 <!DOCTYPE html>
-<html>
- <head>
-     <title>Глава 7</title>
-     <meta charset="UTF-8">
-     <link rel="stylesheet" href="css/style.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
 </head>
- <body>
-    <h1>Выражения и операции в PHP</h1>
-        <h2>Выражения</h2>
-            <p>Выражение - все что имеет какое-то значение в PHP.</p>
-        <h2>Логические выражения</h2>
-            <p>Логические выражения - это выражения, у которых могут быть
-                только два значения, ложь или истина.
-            </p>
-            <code>
-                <pre>
-                    $less = 10 < 5; // $less - false
-                    $equals = $b == 1; // $equals - true, если $b ==1
-                    $between = $b >= 1 && $b <=10 // $between - true, если $b от 0 до 10
-                    $x = ! ($b || $c) && $d; //  true, если $b и $c ложны, а $d - истинно
-                </pre>
-            </code>
-        <h2>Строковые выражения</h2>
-            <p>Строки один из основных объектов PHP</p>
-            <h3>Строка в апострофах</h3>
-                <p>Строка в апострофах трактуется так как записана,
-                    исключение сам апостров и обратный слеш. Для них требуется 
-                    экронирование обратным слешом.
-                </p>
-            <h3>Строка в кавычках</h3>
-                <p>Для строк в кавычках предусмотренны сециальные метасиволы.</p>
-                <code>
-                    \n - новая строка
-                    \r - возврат каретки
-                    \t - табуляция
-                    $ - переменная
-                    \" - кавычка
-                    \nXX - символ с шестнадцатеричным кодом XX
-                </code>
-                <p>Объединение строк</p>
-                <code>
-                    $SOME = "Hell"; // слово Hello без буквы "o"
-                    echo $SOME."o world!"; // один способ
-                    echo "{$SOME}o world!"; // другой способ
-                    echo "${SOME}o world!"; // третий способ!
-                </code>
-    <script href="js.js" type="text/javascript"></script>
- </body>
+<body>
+
+<form action="sign_in.php" method="POST" class="form">
+    <input class="input" id="inp" type="text" name="login" placeholder="login" title="login">
+    <input class="input" type="password" name="pass" title="password" placeholder="password">
+    <input class="submit" type="submit" value="NEXT" name="submit">
+</form>
+
+
+
+<script type="text/javascript" src="js/js.js"></script>
+</body>
 </html>
